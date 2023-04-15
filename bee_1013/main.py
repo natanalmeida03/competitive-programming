@@ -4,9 +4,11 @@
 #A = int(float(input("")))
 #ValueError: could not convert string to float: *******
 
-A = int(input(""))
-B = int(input(""))
-C = int(input(""))
+A, B, C = input("").split(" ")
+
+A = int(A)
+B = int(B)
+C = int(C)
 
 LISTA = [A, B, C]
 
