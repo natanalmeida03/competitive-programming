@@ -7,11 +7,11 @@ A = float(A)
 B = float(B)
 C = float(C)
 
-TRIANGULO = ((round(A, 1)*round(C, 1))/2)
-CIRCULO = (round(math.pi,5)*(round(C, 1)**2))
-TRAPEZIO = ((round(A, 1)+round(B, 1))*round(C, 1))/2
-QUADRADO = round(B, 1)**2
-RETANGULO = round(A, 1)*round(B, 1)
+TRIANGULO = ((A*C)/2)
+CIRCULO = (round(math.pi,5)*(C**2))
+TRAPEZIO = ((A+B)*C)/2
+QUADRADO = B**2
+RETANGULO = A*B
 
 print(f'TRIANGULO: {TRIANGULO:.3f}')
 print(f'CIRCULO: {CIRCULO:.3f}')
