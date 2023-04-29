@@ -1,9 +1,11 @@
 #BEECROWD DÁ RUNTIME ERROR, POR ALGUM MOTIVO AINDA DESCONHECIDO
 import math
 
-A = float(input(""))
-B = float(input(""))
-C = float(input(""))
+A, B, C = input().split(" ")
+
+A = float(A)
+B = float(B)
+C = float(C)
 
 TRIANGULO = ((round(A, 1)*round(C, 1))/2)
 CIRCULO = (round(math.pi,5)*(round(C, 1)**2))
