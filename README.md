@@ -1,11 +1,15 @@
 # competitive-programming
 
-+ [atcoder](/atcoder/)
-+ [beecrowd](/beecrowd/)
-+ [vjudge](/vjudge/)
++ [atcoder codes](/atcoder/)
++ [beecrowd codes](/beecrowd/)
++ [vjudge codes](/vjudge/)
 
 + [exercises](/lists/beginner.md)
 
-#see more
+# Related
+
+- [tep](https://github.com/edsomjr/tep)
+
+From the Professor Edson Alves in _Special Programming Topics_, a class in the University of Brasília (FGA).
 
 - [profile](https://github.com/NATANGOATOSO)
