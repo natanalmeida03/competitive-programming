@@ -13,7 +13,7 @@ int main()
     for(unsigned long long i = 0; i < n; ++ i)
         cin >> f[i];
 
-    sort(f, f + n);
+    sort(f, f + n);g
 
     a = n;
 
