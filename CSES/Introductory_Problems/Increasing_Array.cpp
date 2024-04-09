@@ -4,22 +4,22 @@ typedef long long ll;
 using namespace std;
 
 int main() {
-    ll n, aux, x, r, v = 0;
+    ll n, aux, res = 0;
     cin >> n >> aux;
 
-    for(int i=1; i<n; i++)
+    for(int i = 1; i < n; i++)
     {
-        cin >> x;
+        ll x, a = 0; cin >> x;
         if(x < aux)
         {
-            r = (aux - x) + 1;
-            v = max(v, r);
+            a = aux - x;
+            res += a;
         }
 
-        aux = x;
+        aux = x + a;
     }
 
-    cout << v << "\n";
+    cout << res << " \n";
 
     return 0;
 }
