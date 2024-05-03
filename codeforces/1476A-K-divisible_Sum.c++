@@ -13,21 +13,18 @@ int main() { _
      int t; cin >> t;
 
      while(t--){
-          long long n, k; cin >> n >> k;
+          int n, k; cin >> n >> k;
 
-          if(n == k or k == 1)
+          if(n == k)
                cout << 1 << endl;
-          else if(n < k){
-               if(k % n == 0)
-                    cout << (k / n)<< endl;
-               else
-                    cout << (k / n)+1<< endl;
+          else if(n == 1)
+               cout << k << endl;
+          else{
+               k *= (n + k - 1) / k;
+
+               int ans = k%n == 0? k/n: k/n+1;
+               cout << ans << endl;
           }
-          else
-               if(n%k == 0)
-                    cout << n/k << endl;
-               else
-                    cout << (n/k)+1 << endl;
      }
      return 0;
 }
