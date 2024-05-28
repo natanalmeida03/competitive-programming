@@ -16,21 +16,18 @@ typedef pair<int,int> pii;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
 int main() { _
-    int t; cin >> t;
+     int t; cin >> t;
 
-    while(t--){
-        string s1, s2; cin >> s1 >> s2;
+     vector<char> s1(t), s2(t);
 
-        if(s1 == s2) cout << 0 << endl;
-        else{
-            s2 = s2 + s2;
+     for(auto &x : s1) cin >> x;
+     for(auto &x : s2) cin >> x;
 
-            int x = s2.find(s1);
-            int y = fabs(s1.length()-x);
-            
-            int ans = min(x, y);
-            cout <<  ans << endl;
-        }
-    }
-    return 0;
+     int ans = 0;
+     for(int i = 0; i < t; i++)
+          if(s1[i] == s2[i]) ans++;
+
+     cout << setprecision(10) << fixed << 100.0*ans/t << endl;
+
+     return 0;
 }

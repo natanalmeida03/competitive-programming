@@ -16,21 +16,19 @@ typedef pair<int,int> pii;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
 int main() { _
-    int t; cin >> t;
+     string x; cin >> x;
 
-    while(t--){
-        string s1, s2; cin >> s1 >> s2;
+     stack<char> st;
+     for(auto &c : x){
+          if(st.empty()) st.push(c);
+          else{
+               char t = st.top();
 
-        if(s1 == s2) cout << 0 << endl;
-        else{
-            s2 = s2 + s2;
+               if(t == c) st.pop();
+               else st.push(c);
+          }
+     }
 
-            int x = s2.find(s1);
-            int y = fabs(s1.length()-x);
-            
-            int ans = min(x, y);
-            cout <<  ans << endl;
-        }
-    }
-    return 0;
+     st.empty() ? cout << "sim\n" : cout << "nao\n";
+     return 0;
 }
