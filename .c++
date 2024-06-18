@@ -9,7 +9,6 @@ typedef pair<int,int> pii;
 #define debug(x) cout << x << endl
 #define all(x) x.begin(), x.end()
 #define eb emplace_back
-#define I(x) int x; cin >> x
 #define f first
 #define s second
 
