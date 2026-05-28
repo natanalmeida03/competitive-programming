@@ -3,3 +3,4 @@
 *.txt
 in
 *.out
+*/.vscode
